@@ -1,0 +1,76 @@
+div{
+    height: 50px;
+    width: 50px;
+    margin: 50px;
+    background-color: rgb(0, 200, 255);
+    color: white;
+    font-size: 30pt;
+}
+
+div:nth-child(1){
+    background-color: red;
+}
+
+div:nth-child(2){
+    transform: rotateX(45deg);
+}
+
+div:nth-child(3){
+    transform: rotateY(45deg);
+}
+
+div:nth-child(4){
+    transform: skewX(20deg);
+}
+
+div:nth-child(5){
+    transition: 0.5s;
+}
+
+div:nth-child(5):hover{
+    transform:rotate(360deg) ;
+    background-color: red;
+    transition: 0.5s;
+}
+
+div:nth-child(6):hover{
+    transform: translateX(100px);
+    transition: 0.5s;
+}
+
+
+div:nth-child(7):hover{
+    margin-left : 130px;
+    transition: 0.5s;
+    background-color: red;
+}
+
+
+div:nth-child(8):hover{
+    transform: translateX(100px) rotateZ(360deg);
+    transition: 0.5s;
+}
+
+div:nth-child(9):hover{
+    animation-name:wheel;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes wheel{
+    0%{
+    }
+    25%{
+        transform: scale(2) rotateZ(-180deg);
+    }
+    50%{
+        transform: translateX(100px) rotateZ(360deg);
+    } 
+    75%{
+        transform: scale(0.5) rotateZ(-180deg);
+    }
+    100%{
+        
+    }
+}

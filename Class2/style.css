@@ -1,0 +1,12 @@
+*{
+    color:rgb(0, 171, 202);
+}
+
+li li{
+    height:0;
+    visibility: hidden;
+}
+li:hover> * > *{
+    height:auto;
+    visibility: visible;
+}

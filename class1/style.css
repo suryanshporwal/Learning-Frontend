@@ -1,0 +1,24 @@
+.right{
+    text-align: right;
+    background-color: rgb(92, 184, 255)
+}
+#know{
+    font-size:10px;
+    background-color: rgb(7, 248, 204)
+}
+.outer .inner{
+    visibility: hidden;
+    height: 0;
+}
+.outer:hover> * > .inner{
+    height: max-content;
+    visibility:visible
+}
+/* .inner > * > .inner{
+    visibility: hidden;
+    height: 0;
+} */
+.inner:hover> * > .inner{
+    height:max-content;
+    visibility:visible
+}
