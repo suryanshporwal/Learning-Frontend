@@ -23,7 +23,14 @@ gamebox.addEventListener("click", () => {
   }
 });
 
-document.addEventListener("keydown", movePlayer);
+document.addEventListener("keydown", ()=>{
+  if (gameOver) {
+    gameOver = false;
+    resetGame();
+    updateGame();
+  }
+  else movePlayer();
+});
 
 function movePlayer() {
   if (gameOver) return;
